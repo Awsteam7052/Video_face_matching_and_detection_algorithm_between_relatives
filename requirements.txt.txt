@@ -1,0 +1,37 @@
+# conda create --name LeadersIdentify python==3.12.12
+# pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 基础数值计算与数据处理
+numpy==1.26.4
+scipy==1.17.1
+pydantic==2.12.5
+PyYAML==6.0.3
+easydict==1.13
+
+# 图像处理核心
+pillow==12.0.0
+albumentations==2.0.8
+scikit-image==0.26.0
+# 二选一：无界面环境用headless（推荐），有界面用opencv-python
+opencv-python-headless==4.10.0.84
+# opencv-python==4.10.0.84
+
+# 机器学习与向量检索
+scikit-learn==1.8.0
+faiss==1.9.0
+Cython==3.2.4
+
+# 深度学习框架（CUDA 12.4版本）
+# pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+
+# 模型推理相关
+onnx==1.20.1
+onnxruntime-gpu==1.19.2
+insightface==0.7.3
+
+# 工具类（可视化、日志、进度条等）
+matplotlib==3.10.8
+coloredlogs==15.0.1
+tqdm==4.67.3
+requests==2.32.5
+scenedetect==0.6.7.1
